@@ -1,11 +1,23 @@
 import os
 import pyttsx3
+import datetime
+import pytz
 
 
-pyttsx3.speak("WELCOME    .")
-pyttsx3.speak("Nice to see you here.")
+
+pyttsx3.speak("JARVIS is Online")
+t = datetime.datetime.now()
+if t.hour < 12 :
+    pyttsx3.speak("GOOD MORNING")
+elif t.hour == 12 and t.min == 0 :
+    pyttsx3.speak("GOOD NOON")
+elif t.hour > 11 and t.hour < 4 :
+    pyttsx3.speak("GOOD AFTERNOON")
+else :
+    pyttsx3.speak("GOOD EVENING")
+
+pyttsx3.speak("Nice to see you here")
 print("Nice to see you here")
-pyttsx3.speak("Jarvis is at your service")
 pyttsx3.speak("to be friends tell me your name")
 name = input("What is your Name :: ").strip()
 
