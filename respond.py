@@ -369,7 +369,7 @@ while True:
         i = i + 1
         p = input("Will you like to open some another software (yes/no):: ")
         if "n" in p or "exit" in p or "quit" in p:
-            h = 1
+            h = 0
             break
         elif not("y" in n or "of course" in n or "sure" in n) :
             pyttsx3.speak("unrecognised typo")
