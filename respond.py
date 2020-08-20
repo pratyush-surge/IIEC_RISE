@@ -3,6 +3,7 @@ import pyttsx3
 import datetime
 import pytz
 import getpass
+import time
 
 name = ""
 password = 0
@@ -75,23 +76,23 @@ else :
                 pyttsx3.speak("To many attempts")
                 print("Wait .......")
                 if o == 1:
-                    sleep(60 * 5)
+                    time.sleep(60 * 5)
                 elif o == 2:
-                    sleep(60 * 15)
+                    time.sleep(60 * 15)
                 elif o == 3:
-                    sleep(60 * 30)
+                    time.sleep(60 * 30)
                 elif o == 4:
-                    sleep(60 * 60)
+                    time.sleep(60 * 60)
                 elif o == 5:
-                    sleep(60 * 60 * 6)
+                    time.sleep(60 * 60 * 6)
                 elif o == 6:
-                    sleep(60 * 60 * 12)
+                    time.sleep(60 * 60 * 12)
                 elif o == 7:
-                    sleep(60 * 60 * 24)
+                    time.sleep(60 * 60 * 24)
                 elif o == 8:
-                    sleep(60 * 60 * 24 *2)
+                    time.sleep(60 * 60 * 24 *2)
                 elif o == 9:
-                    sleep(60 * 60 * 24 *5)
+                    time.sleep(60 * 60 * 24 *5)
                 elif o == 10:
                     pyttsx3.speak("YOU Intruder GET OUT")
                     print("you intruder get out")
