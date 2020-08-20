@@ -173,43 +173,43 @@ while True:
             h = [os.system("chrome"), "chrome"]
     #opening virtual box
     elif ("virtualbox" in p):
-        pytttsx3.speak("opening ORACLE VIRTUAL BOX")
+        pyttsx3.speak("opening ORACLE VIRTUAL BOX")
         h = [os.system("VirtualBox"), "VirtualBox"]
     #opening discord
     elif ("discord" in p):
-        pytttsx3.speak("opening discord")
+        pyttsx3.speak("opening discord")
         h = [os.system("discord"), "discord"]
     #opening cmd
     elif "cmd" in p or ("command" in p and ("prompt" in p or "line" in p)):
-        pytttsx3.speak("opening windows command prompt")
+        pyttsx3.speak("opening windows command prompt")
         h = [os.system("cmd"), "cmd"]
     #opening control panel
     elif ("control" in p and "panel" in p) or ("windows" in p and "administrative" in p and "tool" in p):
-        pytttsx3.speak("opening Control Panel")
+        pyttsx3.speak("opening Control Panel")
         h = [os.system("Control Panel"), "Control Panel"]
     #opening Recycle Bin
     elif ("Recycle" in p and "Bin" in p):
-        pytttsx3.speak("opening Recycle Bin")
+        pyttsx3.speak("opening Recycle Bin")
         h = [os.system("Recycle Bin"), "Recycle Bin"]
     #opening ONeDRIVE
     elif ("one" in p and "drive"in p):
-        pytttsx3.speak("opening onedrive")
+        pyttsx3.speak("opening onedrive")
         h = [os.system("OneDrive"), "OneDrive"]
     #opening Libraries
     elif "libraries" in p or ("file" in p and "explorer" in p) :
-        pytttsx3.speak("opening file explorer")
+        pyttsx3.speak("opening file explorer")
         h = [os.system("Libraries"), "Libraries"]
     #opening this Pc
     elif ("this" in p or "my" in p) and ("pc" in p or "computer" in p):
-        pytttsx3.speak("opening THIS Pc")
+        pyttsx3.speak("opening THIS Pc")
         h = [os.system("This PC"), "This PC"]
     #opening system networks
     elif "network" in p :
-        pytttsx3.speak("opening Networks")
+        pyttsx3.speak("opening Networks")
         h = [os.system("Network"), "Network"]
     #opening RUN
     elif "run" in p:
-        pytttsx3.speak("opening run")
+        pyttsx3.speak("opening run")
         h = [os.system("run"), "run"]
     #opening unity hub
     elif "unity" in p :
@@ -217,7 +217,7 @@ while True:
         h = [os.system("Unity Hub"), "Unity Hub"]
     #opening unity hub
     elif "edge" in p :
-        pytttsx3.speak("opening Microsoft Edge")
+        pyttsx3.speak("opening Microsoft Edge")
         h = [os.system("msedge"), "msedge"]
     #opening ADobe Acrobat reader
     elif "AcroRd#2" in p :
@@ -225,7 +225,7 @@ while True:
         h = [os.system("AcroRd32"), "AcroRd32"]
     #opening Maxx Audio Pro
     elif "waves" in p and ("max" in p or "audio" in p):
-        pytttsx3.speak("opening Waves Maxx Audio Pro")
+        pyttsx3.speak("opening Waves Maxx Audio Pro")
         h = [os.system("MaxxAudioPro"), "MaxxAudioPro"]
     #opening notepad
     elif ("notepad" in p or "text" in p) and "editor" in p:
