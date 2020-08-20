@@ -116,9 +116,11 @@ while True :
     pyttsx3.speak("DO you wish to open an application for any use")
     p = input("Do you wish to open an application for any use (yes/no) :: ")
     if "n" in p:
-        exit(0)
+        h = 0
+        break
     if "y" in n or "of course" in n or "sure" in n :
         h = 1
+        break
     else :
         pyttsx3.speak("unrecognised typo")
         print("unrecognised typo")
@@ -364,6 +366,7 @@ while True:
         elif not("y" in n or "of course" in n or "sure" in n) :
             pyttsx3.speak("unrecognised typo")
             print("unrecognised typo")
+     h = 1
 #termination
 pyttsx3.speak("Bye "+ name)
 print("BYE " + name)
