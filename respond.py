@@ -118,7 +118,7 @@ while True :
     if "n" in p:
         h = 0
         break
-    if "y" in n or "of course" in n or "sure" in n :
+    elif "y" in n or "of course" in n or "sure" in n :
         h = 1
         break
     else :
