@@ -29,7 +29,9 @@ if not(os.path.isfile(".username.txt")):
         if "y" in n or "of course" in n or "sure" in n :
             i = 0
             while True :
+                pyttsx3.speak("ENTER THE NEW PASSWORD")
                 password = getpass.getpass(prompt="ENTER THE NEW PASSWORD :: ")
+                pyttsx3.speak("ENTER THE NEW PASSWORD Again")
                 password2 = getpass.getpass(prompt="ENTER THE NEW PASSWORD AGAIN :: ")
                 if password == password2 :
                     break
@@ -56,6 +58,7 @@ else :
     name = td.readline() # reading the file line by line
     name = td.readline() # reading the file line by line
     pass2= td.readline() # reading the file line by line
+    pyttsx3.speak("PLease Enter the password")
     password = getpass.getpass(prompt="PASSWORD :: ") # asking the user to confirm username
     i = 0
     while True :
@@ -116,9 +119,11 @@ while True :
     pyttsx3.speak("DO you wish to open an application for any use")
     p = input("Do you wish to open an application for any use (yes/no) :: ")
     if "n" in p:
-        exit(0)
-    if "y" in n or "of course" in n or "sure" in n :
+        h = 0
+        break
+    elif "y" in n or "of course" in n or "sure" in n :
         h = 1
+        break
     else :
         pyttsx3.speak("unrecognised typo")
         print("unrecognised typo")
@@ -335,9 +340,11 @@ while True:
                     else :
                         pyttsx3.speak("APPLICATION NOT INSTALLED OR COMMUNICATION ERROR")
                         print("APPLICATION NOT INSTALLED OR COMMUNICATION ERROR")
+                        l = 0
         else :
             pyttsx3.speak("Sir , according to my diagnosis the Application is not installed.        Are you sure you have the specified software installed on the device")
             p = input("According to my diagnosis the Application is not installed.\n Are you sure you have the specified software installed on the device ? ::")
+            l = 0
             if "n" in p or "exit" in p or "quit" in p:
                 pyttsx3.speak("I recommend you to first install the application")
                 print("I recommend you to first install the application :: ")
@@ -350,9 +357,10 @@ while True:
                 pyttsx3.speak("I regret the inconvinience. Please Try Again")
                 continue
     # if an application was not opened then h[0] was supposed to be one so telling the user to update enviornment variables
-    if h[0] == 1:
-        print(" Please update Enviornment Variables")
-        pyttsx3.speak("Sir, then Please update Enviornment Variables")
+    if l != 0:
+        if h[0] == 1:
+            print(" Please update Enviornment Variables")
+            pyttsx3.speak("Sir, then Please update Enviornment Variables")
     #asking the user whether he will open something more
     pyttsx3.speak("Sir, Will you like to open some another software.")
     while i < 5:
