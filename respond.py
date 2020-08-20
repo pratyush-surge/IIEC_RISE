@@ -372,6 +372,7 @@ while True:
         elif not("y" in n or "of course" in n or "sure" in n) :
             pyttsx3.speak("unrecognised typo")
             print("unrecognised typo")
+     h = 1
 #termination
 pyttsx3.speak("Bye "+ name)
 print("BYE " + name)
