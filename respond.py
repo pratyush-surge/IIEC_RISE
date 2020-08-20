@@ -72,7 +72,8 @@ else :
             pyttsx3.speak("Wrong Password")
             pyttsx3.speak(4-i)
             pyttsx3.speak("Attempts Left")
-            if(5 % i == 0) :
+            if(i % 5 == 0) :
+                o = i%5
                 pyttsx3.speak("To many attempts")
                 print("Wait .......")
                 if o == 1:
