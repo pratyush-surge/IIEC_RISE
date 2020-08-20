@@ -215,7 +215,7 @@ while True:
         h = [os.system("run"), "run"]
     #opening unity hub
     elif "unity" in p :
-        pytttsx3.speak("opening UNITY HUB")
+        pyttsx3.speak("opening UNITY HUB")
         h = [os.system("Unity Hub"), "Unity Hub"]
     #opening unity hub
     elif "edge" in p :
@@ -223,7 +223,7 @@ while True:
         h = [os.system("msedge"), "msedge"]
     #opening ADobe Acrobat reader
     elif "AcroRd#2" in p :
-        pytttsx3.speak("opening Adobe Acrobat")
+        pyttsx3.speak("opening Adobe Acrobat")
         h = [os.system("AcroRd32"), "AcroRd32"]
     #opening Maxx Audio Pro
     elif "waves" in p and ("max" in p or "audio" in p):
